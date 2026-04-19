@@ -1,0 +1,30 @@
+Stage C subset readiness report
+
+Locked facts
+R0=-27.256548
+R_REF_SHORT=-22.315781
+R_THRESH_SHORT=-24.786164
+
+Prerequisite status
+stage_b_complete=yes
+short_bridge_in_domain_boundary_count=1
+short_bridge_edge_censored_count=10
+short_bridge_no_boundary_even_gateoff_count=0
+short_bridge_unresolved_alpha_count=0
+fullref_32seed_completed=yes
+fullref_32seed_mean_return=-24.779596
+fullref_32seed_sd_return=2.885914
+fullref_32seed_bootstrap95_mean_return=[-25.808066, -23.784902]
+fullref_32seed_fraction_below_R0=0.156250
+fullref_32seed_mean_confidently_above_R0=yes
+
+Decision
+stage_c_subset_ready=yes
+recommended_stage_c_focus_alphas=0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0
+note=This script never auto-launches Stage C. It only tells you whether the locked Stage-B bridge now supports a defensible Stage-C subset while allowing no-boundary and right-censored alphas to be reported honestly.
+
+Next files to inspect
+STAGE_B_COMPLETION_REPORT.txt
+stageB_alpha_classification.csv
+fullref_32seed_report.txt
+stageC_candidate_alphas_from_bridge.csv

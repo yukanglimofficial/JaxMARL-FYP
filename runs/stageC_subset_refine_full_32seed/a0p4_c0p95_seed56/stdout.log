@@ -1,0 +1,44 @@
+Importing submoduled environments...
+Submoduled environments not found. Skipping import.
+[upd 0] u=1 upd_ctr=1 opt_step=16 E=0.089 g=0.096 VarTD=0.126111 ret_end=-26.492 dbar_end=0.745 occ_end=0.140 CSR_train=0.000 done_count=100
+[upd 10] u=0 upd_ctr=1 opt_step=16 E=0.462 g=0.101 VarTD=0.147310 ret_end=-26.592 dbar_end=0.729 occ_end=0.144 CSR_train=0.000 done_count=125
+[upd 20] u=0 upd_ctr=1 opt_step=16 E=0.840 g=0.088 VarTD=0.157317 ret_end=-27.734 dbar_end=0.776 occ_end=0.112 CSR_train=0.000 done_count=125
+[upd 30] u=0 upd_ctr=2 opt_step=32 E=0.282 g=0.106 VarTD=0.136457 ret_end=-25.626 dbar_end=0.714 occ_end=0.168 CSR_train=0.000 done_count=125
+[upd 40] u=0 upd_ctr=2 opt_step=32 E=0.680 g=0.110 VarTD=0.128671 ret_end=-25.978 dbar_end=0.702 occ_end=0.136 CSR_train=0.000 done_count=125
+[upd 50] u=0 upd_ctr=3 opt_step=48 E=0.127 g=0.095 VarTD=0.175322 ret_end=-27.760 dbar_end=0.749 occ_end=0.120 CSR_train=0.000 done_count=125
+[upd 60] u=0 upd_ctr=3 opt_step=48 E=0.520 g=0.107 VarTD=0.149751 ret_end=-26.569 dbar_end=0.712 occ_end=0.144 CSR_train=0.000 done_count=125
+[upd 70] u=0 upd_ctr=3 opt_step=48 E=0.922 g=0.097 VarTD=0.141193 ret_end=-27.236 dbar_end=0.744 occ_end=0.136 CSR_train=0.000 done_count=125
+[upd 80] u=0 upd_ctr=4 opt_step=64 E=0.382 g=0.102 VarTD=0.159264 ret_end=-26.664 dbar_end=0.728 occ_end=0.248 CSR_train=0.000 done_count=125
+[upd 90] u=0 upd_ctr=4 opt_step=64 E=0.817 g=0.115 VarTD=0.142798 ret_end=-26.525 dbar_end=0.690 occ_end=0.192 CSR_train=0.000 done_count=125
+[upd 100] u=0 upd_ctr=5 opt_step=80 E=0.317 g=0.118 VarTD=0.161098 ret_end=-26.261 dbar_end=0.680 occ_end=0.144 CSR_train=0.000 done_count=125
+[upd 110] u=0 upd_ctr=5 opt_step=80 E=0.767 g=0.119 VarTD=0.148192 ret_end=-26.354 dbar_end=0.678 occ_end=0.192 CSR_train=0.000 done_count=125
+[upd 120] u=0 upd_ctr=6 opt_step=96 E=0.246 g=0.112 VarTD=0.176353 ret_end=-27.147 dbar_end=0.696 occ_end=0.168 CSR_train=0.000 done_count=125
+[upd 130] u=0 upd_ctr=6 opt_step=96 E=0.702 g=0.106 VarTD=0.157472 ret_end=-27.200 dbar_end=0.714 occ_end=0.180 CSR_train=0.000 done_count=100
+[upd 140] u=0 upd_ctr=7 opt_step=112 E=0.207 g=0.119 VarTD=0.152852 ret_end=-25.840 dbar_end=0.677 occ_end=0.192 CSR_train=0.000 done_count=125
+[upd 150] u=0 upd_ctr=7 opt_step=112 E=0.679 g=0.132 VarTD=0.148740 ret_end=-25.268 dbar_end=0.644 occ_end=0.208 CSR_train=0.000 done_count=125
+[upd 160] u=0 upd_ctr=8 opt_step=128 E=0.207 g=0.123 VarTD=0.166463 ret_end=-26.452 dbar_end=0.667 occ_end=0.208 CSR_train=0.000 done_count=125
+[upd 170] u=0 upd_ctr=8 opt_step=128 E=0.699 g=0.119 VarTD=0.183273 ret_end=-26.366 dbar_end=0.678 occ_end=0.216 CSR_train=0.000 done_count=125
+[upd 180] u=0 upd_ctr=9 opt_step=144 E=0.234 g=0.126 VarTD=0.154088 ret_end=-25.975 dbar_end=0.660 occ_end=0.176 CSR_train=0.008 done_count=125
+[upd 190] u=0 upd_ctr=9 opt_step=144 E=0.727 g=0.122 VarTD=0.187434 ret_end=-25.870 dbar_end=0.670 occ_end=0.208 CSR_train=0.000 done_count=125
+[upd 200] u=0 upd_ctr=10 opt_step=160 E=0.282 g=0.130 VarTD=0.175627 ret_end=-25.150 dbar_end=0.649 occ_end=0.208 CSR_train=0.000 done_count=125
+[upd 210] u=0 upd_ctr=10 opt_step=160 E=0.804 g=0.134 VarTD=0.193506 ret_end=-25.284 dbar_end=0.640 occ_end=0.248 CSR_train=0.000 done_count=125
+[upd 220] u=0 upd_ctr=11 opt_step=176 E=0.394 g=0.128 VarTD=0.213120 ret_end=-26.606 dbar_end=0.654 occ_end=0.152 CSR_train=0.000 done_count=125
+[upd 230] u=0 upd_ctr=11 opt_step=176 E=0.957 g=0.137 VarTD=0.182235 ret_end=-24.637 dbar_end=0.633 occ_end=0.240 CSR_train=0.000 done_count=125
+[upd 240] u=0 upd_ctr=12 opt_step=192 E=0.567 g=0.137 VarTD=0.204349 ret_end=-25.779 dbar_end=0.633 occ_end=0.216 CSR_train=0.000 done_count=125
+[upd 250] u=0 upd_ctr=13 opt_step=208 E=0.181 g=0.142 VarTD=0.255143 ret_end=-26.017 dbar_end=0.622 occ_end=0.200 CSR_train=0.000 done_count=125
+[upd 260] u=0 upd_ctr=13 opt_step=208 E=0.743 g=0.141 VarTD=0.222303 ret_end=-25.716 dbar_end=0.623 occ_end=0.290 CSR_train=0.000 done_count=100
+[upd 270] u=0 upd_ctr=14 opt_step=224 E=0.372 g=0.141 VarTD=0.304202 ret_end=-24.952 dbar_end=0.624 occ_end=0.224 CSR_train=0.008 done_count=125
+[upd 280] u=0 upd_ctr=14 opt_step=224 E=0.945 g=0.136 VarTD=0.274441 ret_end=-25.218 dbar_end=0.635 occ_end=0.224 CSR_train=0.000 done_count=125
+[upd 290] u=0 upd_ctr=15 opt_step=240 E=0.582 g=0.147 VarTD=0.342316 ret_end=-26.121 dbar_end=0.610 occ_end=0.264 CSR_train=0.008 done_count=125
+[upd 300] u=0 upd_ctr=16 opt_step=256 E=0.221 g=0.146 VarTD=0.358453 ret_end=-25.191 dbar_end=0.613 occ_end=0.256 CSR_train=0.008 done_count=125
+[upd 310] u=0 upd_ctr=16 opt_step=256 E=0.821 g=0.168 VarTD=0.326874 ret_end=-23.606 dbar_end=0.568 occ_end=0.272 CSR_train=0.000 done_count=125
+[Gate5 check] update_counter violations: t0=0 diffs=0
+[Gate5 check] opt_step violations: t0=0 diffs=0 (expected_inc=16)
+[Gate5 check] NaN masking: nan_on_skip=True finite_on_update=True
+[Gate5 summary] mean_update_fraction=0.0513 final_executed_updates_mean=16.00
+[Gate5 eval] done_count mean=100.0 CSR mean=0.0100 len_end_mean=26.00
+[Gate5 eval] episodes_per_env=4 T_eval=104
+[Gate5 eval-debug] locked_eps_occ=0.20 pre(step25): dbar_end=0.509835 occupied_end_mean=0.330000 max_tilde_end_mean=0.729701 CSR@locked=0.010000
+[Gate5 eval-debug] locked_eps_occ=0.20 post(step26): dbar_end=0.506540 occupied_end_mean=0.320000 max_tilde_end_mean=0.715553 CSR@locked=0.010000
+[Gate5 eval-debug] CSR_pre@0.10=0.0000 CSR_pre@0.15=0.0100 CSR_pre@0.20=0.0100 CSR_pre@0.25=0.0100 CSR_pre@0.30=0.0100
+[Gate5 eval-debug] CSR_post@0.10=0.0000 CSR_post@0.15=0.0000 CSR_post@0.20=0.0100 CSR_post@0.25=0.0200 CSR_post@0.30=0.0400

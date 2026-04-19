@@ -1,0 +1,30 @@
+Stage B completion bridge report
+
+Locked facts
+R0=-27.256548
+R_REF_SHORT=-22.315781
+R_THRESH_SHORT=-24.786164
+gateoff_control_note=c_upd=1.05 is a diagnostic gate-off control point beyond the physical map domain [0,1]; it is not part of the final physical phase diagram.
+
+Bridge summary
+completed_runs=1248
+expected_runs=1248
+missing_runs=0
+classified_in_domain_boundary_count=1
+classified_edge_censored_count=10
+classified_no_boundary_even_gateoff_count=0
+unresolved_alpha_count=0
+stage_b_complete=yes
+
+Per-alpha classification
+alpha=0.0 classification=in_domain_bracket_ready enabled_anchor_c=0.100 enabled_anchor_P=0.937500 boundary_proxy_c=0.500 boundary_proxy_P=0.593750 below_proxy_c=0.600 below_proxy_P=0.375000 edge_max_P=0.375000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=0.500 bracket_hi_or_gateoff=0.600 proposed_refine=0.520,0.540,0.560,0.580 note=32-seed bridge now contains an in-domain short-horizon bracket.
+alpha=0.1 classification=edge_censored_gt_1p0 enabled_anchor_c=0.100 enabled_anchor_P=0.968750 boundary_proxy_c=0.900 boundary_proxy_P=0.593750 below_proxy_c=none below_proxy_P=none edge_max_P=0.750000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.2 classification=edge_censored_gt_1p0 enabled_anchor_c=0.800 enabled_anchor_P=0.906250 boundary_proxy_c=0.900 boundary_proxy_P=0.750000 below_proxy_c=none below_proxy_P=none edge_max_P=0.750000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.3 classification=edge_censored_gt_1p0 enabled_anchor_c=0.900 enabled_anchor_P=0.875000 boundary_proxy_c=0.600 boundary_proxy_P=0.812500 below_proxy_c=none below_proxy_P=none edge_max_P=0.843750 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.4 classification=edge_censored_gt_1p0 enabled_anchor_c=1.000 enabled_anchor_P=0.906250 boundary_proxy_c=0.900 boundary_proxy_P=0.937500 below_proxy_c=none below_proxy_P=none edge_max_P=0.906250 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.5 classification=edge_censored_gt_1p0 enabled_anchor_c=0.700 enabled_anchor_P=0.937500 boundary_proxy_c=0.400 boundary_proxy_P=0.843750 below_proxy_c=none below_proxy_P=none edge_max_P=0.875000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.6 classification=edge_censored_gt_1p0 enabled_anchor_c=1.000 enabled_anchor_P=0.906250 boundary_proxy_c=0.800 boundary_proxy_P=0.968750 below_proxy_c=none below_proxy_P=none edge_max_P=0.906250 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.7 classification=edge_censored_gt_1p0 enabled_anchor_c=1.000 enabled_anchor_P=0.906250 boundary_proxy_c=0.900 boundary_proxy_P=0.937500 below_proxy_c=none below_proxy_P=none edge_max_P=0.906250 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.8 classification=edge_censored_gt_1p0 enabled_anchor_c=1.000 enabled_anchor_P=1.000000 boundary_proxy_c=0.800 boundary_proxy_P=0.812500 below_proxy_c=none below_proxy_P=none edge_max_P=1.000000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=0.9 classification=edge_censored_gt_1p0 enabled_anchor_c=1.000 enabled_anchor_P=0.937500 boundary_proxy_c=0.800 boundary_proxy_P=0.906250 below_proxy_c=none below_proxy_P=none edge_max_P=0.937500 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.
+alpha=1.0 classification=edge_censored_gt_1p0 enabled_anchor_c=0.900 enabled_anchor_P=0.906250 boundary_proxy_c=1.000 boundary_proxy_P=0.875000 below_proxy_c=none below_proxy_P=none edge_max_P=0.875000 gateoff_P=0.031250 gateoff_mean_update_fraction=0.000000 bracket_lo=1.000 bracket_hi_or_gateoff=1.050 proposed_refine=0.900,0.950,1.000 note=In-domain edge stays above threshold, but the gate-off control falls below threshold. Treat as right-censored above c_upd=1.0 in the physical map.

@@ -1,0 +1,40 @@
+alpha,c_upd,roles,notes
+0.0,0.1,enabled_anchor,highest 8-seed P=1 point
+0.0,0.5,boundary_proxy,closest current point above the 0.5 crossing
+0.0,0.6,below_proxy,first current in-domain point below 0.5
+0.0,1.0,edge_max,top of physical c_upd domain
+0.0,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.1,0.1,enabled_anchor,highest 8-seed P=1 point
+0.1,0.9,boundary_proxy,closest current point to 0.5
+0.1,1.0,edge_max,top of physical c_upd domain
+0.1,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.2,0.8,enabled_anchor,highest 8-seed P=1 point
+0.2,0.9,boundary_proxy,closest current point to 0.5
+0.2,1.0,edge_max,top of physical c_upd domain
+0.2,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.3,0.9,enabled_anchor,highest 8-seed P=1 point
+0.3,0.6,boundary_proxy,closest current point to 0.5
+0.3,1.0,edge_max,top of physical c_upd domain
+0.3,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.4,0.9,boundary_proxy,closest current point to 0.5
+0.4,1.0,enabled_anchor;edge_max,highest 8-seed P=1 point and top of physical domain
+0.4,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.5,0.4,boundary_proxy,closest current point to 0.5
+0.5,0.7,enabled_anchor,highest 8-seed P=1 point
+0.5,1.0,edge_max,top of physical c_upd domain
+0.5,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.6,0.8,boundary_proxy,closest current point to 0.5
+0.6,1.0,enabled_anchor;edge_max,highest 8-seed P=1 point and top of physical domain
+0.6,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.7,0.9,boundary_proxy,closest current point to 0.5
+0.7,1.0,enabled_anchor;edge_max,highest 8-seed P=1 point and top of physical domain
+0.7,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.8,0.8,boundary_proxy,closest current point to 0.5
+0.8,1.0,enabled_anchor;edge_max,highest 8-seed P=1 point and top of physical domain
+0.8,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+0.9,0.8,boundary_proxy,closest current point to 0.5
+0.9,1.0,enabled_anchor;edge_max,highest 8-seed P=1 point and top of physical domain
+0.9,1.05,gateoff_control,diagnostic gate-off control beyond physical domain
+1.0,0.9,enabled_anchor,highest 8-seed P=1 point
+1.0,1.0,boundary_proxy;edge_max,closest current point to 0.5 and top of physical domain
+1.0,1.05,gateoff_control,diagnostic gate-off control beyond physical domain

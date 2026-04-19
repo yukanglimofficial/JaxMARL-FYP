@@ -1,0 +1,16 @@
+Full-horizon ungated reference 32-seed report
+
+completed_runs=32
+expected_runs=32
+missing_runs=0
+mean_eval_return_end_mean=-24.779596
+sd_eval_return_end_mean=2.885914
+median_eval_return_end_mean=-24.862910
+min_eval_return_end_mean=-31.193098
+max_eval_return_end_mean=-20.023287
+bootstrap95_mean_return_lo=-25.808066
+bootstrap95_mean_return_hi=-23.784902
+fraction_below_R0=0.156250
+mean_eval_dbar_post=0.665872
+mean_eval_occupied_post_mean=0.288750
+mean_eval_CSR_mean=0.002500
