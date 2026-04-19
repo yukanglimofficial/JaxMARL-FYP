@@ -1,0 +1,70 @@
+Stage C subset full-horizon refinement report
+
+Frozen inputs verified
+handoff_file=freeze_notes/STAGEB_COMPLETE_STAGEC_READY/HANDOFF_STAGEB_COMPLETE_TO_STAGEC.txt
+stage_b_report=runs/stageB_completion_bridge_reports/STAGE_B_COMPLETION_REPORT.txt
+stage_c_subset_readiness_report=runs/stageB_completion_bridge_reports/STAGE_C_SUBSET_READINESS_REPORT.txt
+fullref_report=runs/stageB_completion_bridge_reports/fullref_32seed_report.txt
+fullref_per_run_csv=runs/stageB_completion_bridge_reports/fullref_32seed_per_run.csv
+stageb_alpha_csv=runs/stageB_completion_bridge_reports/stageB_alpha_classification.csv
+stagec_candidate_csv=runs/stageB_completion_bridge_reports/stageC_candidate_alphas_from_bridge.csv
+
+Locked constants
+R0=-27.256548
+D0=0.733348
+R_REF_FULL=-24.779596
+R_THRESH_FULL=-26.018072
+EPS_OCC=0.200000
+M_EVAL=100
+FULL_TIMESTEPS=1000000
+NUM_ENVS=25
+NUM_STEPS=128
+SEEDS=30..61 (32 total)
+
+Locked full-reference verification
+fullref_completed_runs=32
+fullref_mean_eval_return_end_mean=-24.779596
+fullref_sd_eval_return_end_mean=2.885914
+fullref_bootstrap95_mean_return=[-25.808066, -23.784902]
+fullref_fraction_below_R0=0.156250
+
+Stage C run completion
+completed_runs=1088
+expected_runs=1088
+missing_runs=0
+stage_c_subset_complete=yes
+selected_full_horizon_points=34
+selected_alphas=11
+
+Boundary classification summary
+in_domain_count=0
+right_censored_count=11
+left_censored_count=0
+incomplete_count=0
+other_count=0
+
+Per-alpha boundary evidence
+alpha=0.0 candidate_type=in_domain stageB_classification=in_domain_bracket_ready full_horizon_classification=right_censored_gt_refine_band fit_method=none bracket_lo=0.580 bracket_hi=none c_star_hat=none bootstrap95_c_star=0.575411:0.580000 P=0.718750,0.718750,0.718750,0.718750 P_iso=0.718750,0.718750,0.718750,0.718750 mean_returns=-25.887709,-25.887565,-25.888891,-25.888891 mean_I_R_full=0.552630,0.552689,0.552153,0.552153 note=All refined full-horizon points remain above the learning threshold; the boundary lies above the sampled refine band.
+alpha=0.1 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=0.968750,0.937500,0.906250 P_iso=0.968750,0.937500,0.906250 mean_returns=-24.052776,-23.962219,-24.524365 mean_I_R_full=1.293433,1.329993,1.103042 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.2 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=0.968750,0.968750,1.000000 P_iso=0.979167,0.979167,0.979167 mean_returns=-23.851759,-24.033771,-23.945867 mean_I_R_full=1.374588,1.301106,1.336595 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.3 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.860035,-23.870503,-24.020606 mean_I_R_full=1.371247,1.367021,1.306421 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.4 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.719367,-23.834808,-23.938057 mean_I_R_full=1.428038,1.381432,1.339748 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.5 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.559497,-23.711623,-23.841930 mean_I_R_full=1.492581,1.431164,1.378556 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.6 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.430765,-23.506948,-23.666071 mean_I_R_full=1.544553,1.513796,1.449554 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.7 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.601074,-23.517134,-23.621875 mean_I_R_full=1.475795,1.509684,1.467397 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.8 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.464234,-23.483750,-23.418821 mean_I_R_full=1.531040,1.523162,1.549375 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=0.9 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.382510,-23.410279,-23.517805 mean_I_R_full=1.564034,1.552824,1.509413 note=Full horizon preserves right-censoring above the physical c_upd domain.
+alpha=1.0 candidate_type=edge_censored stageB_classification=edge_censored_gt_1p0 full_horizon_classification=right_censored_gt_1p0 fit_method=none bracket_lo=1.000 bracket_hi=none c_star_hat=none bootstrap95_c_star=none:none P=1.000000,1.000000,1.000000 P_iso=1.000000,1.000000,1.000000 mean_returns=-23.207984,-23.290840,-23.399934 mean_I_R_full=1.634494,1.601043,1.557000 note=Full horizon preserves right-censoring above the physical c_upd domain.
+
+Output files
+runs/stageC_subset_refine_reports/stageC_subset_refine_manifest.csv
+runs/stageC_subset_refine_reports/stageC_subset_refine_per_run.csv
+runs/stageC_subset_refine_reports/stageC_subset_refine_by_point.csv
+runs/stageC_subset_refine_reports/stageC_subset_refine_alpha_boundary.csv
+runs/stageC_subset_refine_reports/stageC_subset_refine_missing_runs.txt
+runs/stageC_subset_refine_reports/STAGE_C_SUBSET_FULL_HORIZON_REPORT.txt
+
+Next files for dissertation use
+runs/stageC_subset_refine_reports/stageC_subset_refine_by_point.csv
+runs/stageC_subset_refine_reports/stageC_subset_refine_alpha_boundary.csv
+runs/stageC_subset_refine_reports/STAGE_C_SUBSET_FULL_HORIZON_REPORT.txt

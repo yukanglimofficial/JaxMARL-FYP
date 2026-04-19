@@ -1,0 +1,85 @@
+{
+  "environment": {
+    "cpu_count": 24,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python_version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]"
+  },
+  "generated_at_unix": 1773847354.5652976,
+  "input_files": {
+    "gate5_master": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/baselines/IPPO/ippo_ff_mpe_gate5_energy_gated.py",
+      "sha256": "0b4f7f5181e9407d1154d3d0f4e6e8704ba4f4365ef2d946ca2238c9b8564943"
+    },
+    "project_plan": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/project_v2_1.txt",
+      "sha256": "e66816e474776d811ab0861114426ffd0cfb371e20c17e9bc5f7e3d566271186"
+    },
+    "stageb_bridge_by_point": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/stageB_completion_bridge_reports/stageB_bridge_by_point.csv",
+      "sha256": "e911f3b41a71f0c379be5e4653516f73df44b0a59796a72a2e3ddda4cf058659"
+    },
+    "stagec_alpha_boundary": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/stageC_subset_refine_reports/stageC_subset_refine_alpha_boundary.csv",
+      "sha256": "40e889006413097e74978186dd4dea1d13d435bfb3e5c1badffa4c2f4b3b3629"
+    },
+    "stagec_by_point": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/stageC_subset_refine_reports/stageC_subset_refine_by_point.csv",
+      "sha256": "440c8ff880b7aa57b52e502a24288a8d43902c6117341c2cd17fd43ff6f43bcc"
+    },
+    "stagec_report": {
+      "path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/stageC_subset_refine_reports/STAGE_C_SUBSET_FULL_HORIZON_REPORT.txt",
+      "sha256": "093721e2998fed5f298b551e02e36065b847ef2931551eee7f8d912271447ff5"
+    }
+  },
+  "locked_constants": {
+    "D0": 0.733348,
+    "EPS_OCC": 0.2,
+    "M_EVAL": 100,
+    "NUM_ENVS": 25,
+    "NUM_STEPS": 128,
+    "R0": -27.256548,
+    "R_REF_FULL": -24.779596,
+    "R_REF_SHORT": -22.315781,
+    "R_THRESH_FULL": -26.018072,
+    "R_THRESH_SHORT": -24.786164,
+    "SEED_START": 30,
+    "SEED_STOP_INCLUSIVE": 61
+  },
+  "output_dir": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/stageD_representative_mechanistic_traces",
+  "repo_root": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair",
+  "selected_conditions": [
+    {
+      "alpha": 1.0,
+      "c_upd": 0.9,
+      "expected_status": "learning-enabled full-horizon exemplar",
+      "horizon_label": "full",
+      "label": "enabled_full",
+      "note": "",
+      "rationale": "Strongest learning-enabled full-horizon point in the completed Stage C by-point table.",
+      "stage_source": "Stage C",
+      "total_timesteps": 1000000
+    },
+    {
+      "alpha": 0.0,
+      "c_upd": 0.58,
+      "expected_status": "boundary-near / fragile full-horizon exemplar",
+      "horizon_label": "full",
+      "label": "fragile_full",
+      "note": "",
+      "rationale": "Largest sampled in-domain alpha=0.0 Stage C refine point; Stage C says the true full-horizon boundary lies above this sampled band.",
+      "stage_source": "Stage C",
+      "total_timesteps": 1000000
+    },
+    {
+      "alpha": 0.0,
+      "c_upd": 0.6,
+      "expected_status": "disabled within accepted short horizon",
+      "horizon_label": "short",
+      "label": "disabled_short",
+      "note": "This is a short-horizon disabled exemplar only. It must not be described as a full-horizon in-domain crossing.",
+      "rationale": "First accepted in-domain short-horizon alpha=0.0 point beyond the full-horizon fragile band with P_learn < 0.5.",
+      "stage_source": "Stage B",
+      "total_timesteps": 400000
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+condition,phase,family,metric_horizon,alpha,c_upd,total_timesteps,checkpoint_behavior_class,checkpoint_count,checkpoint_first_return,checkpoint_peak_return,checkpoint_peak_update,checkpoint_final_return,checkpoint_delta_first_to_final,checkpoint_delta_peak_to_final
+anchor_short_fail_probe__base__t4m__a0p00__c0p60,baseline_4m,base,long4m,0.0,0.6,4000000,flat,62,-25.888891220092773,-25.888891220092773,19.0,-25.888891220092773,0.0,0.0
+anchor_fragile_full_probe__base__t4m__a0p00__c0p58,baseline_4m,base,long4m,0.0,0.58,4000000,flat,62,-25.888891220092773,-25.888891220092773,19.0,-25.888891220092773,0.0,0.0
+anchor_edge_full_probe__base__t4m__a0p10__c1p00,baseline_4m,base,long4m,0.1,1.0,4000000,net_improvement,62,-25.888891220092773,-23.753435134887695,939.0,-23.877546310424805,2.0113449096679688,-0.12411117553710938
+anchor_enabled_full_probe__base__t4m__a1p00__c0p90,baseline_4m,base,long4m,1.0,0.9,4000000,improve_then_decline,62,-24.315568923950195,-22.56239891052246,419.0,-26.87127685546875,-2.5557079315185547,-4.308877944946289

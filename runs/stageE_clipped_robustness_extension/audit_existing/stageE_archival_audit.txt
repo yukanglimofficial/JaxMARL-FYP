@@ -1,0 +1,47 @@
+Stage E archival audit report
+
+Verified prerequisites
+project_plan=project_v2_1.txt
+accepted_master=baselines/IPPO/ippo_ff_mpe_gate5_energy_gated.py
+stageb_script=stageB_completion_bridge.py
+stagec_script=stageC_subset_refine.py
+staged_script=stageD_representative_mechanistic_traces.py
+stageb_report=runs/stageB_completion_bridge_reports/STAGE_B_COMPLETION_REPORT.txt
+stageb_by_point=runs/stageB_completion_bridge_reports/stageB_bridge_by_point.csv
+stagec_report=runs/stageC_subset_refine_reports/STAGE_C_SUBSET_FULL_HORIZON_REPORT.txt
+stagec_by_point=runs/stageC_subset_refine_reports/stageC_subset_refine_by_point.csv
+stagec_alpha_boundary=runs/stageC_subset_refine_reports/stageC_subset_refine_alpha_boundary.csv
+staged_report=runs/stageD_representative_mechanistic_traces/STAGE_D_REPRESENTATIVE_MECHANISTIC_TRACES_REPORT.txt
+staged_endpoints=runs/stageD_representative_mechanistic_traces/stageD_endpoint_summary_all_conditions.csv
+
+Locked thesis-core facts
+stage_b_complete=yes
+stage_c_subset_complete=yes
+stage_c_completed_runs=1088
+stage_c_expected_runs=1088
+stage_c_right_censored_count=11
+
+Claims-to-evidence outputs
+- claims_to_evidence_map.csv
+- authoritative_vs_supportive_evidence.csv
+
+Stage D fragile_full audit caveat
+stagec_mean_eval_return_end_mean=-25.888891 staged_eval_return_end_mean=-25.233843 return_gap=0.655048
+stagec_mean_update_fraction=0.003205 staged_mean_update_fraction=0.003205
+Interpretation: treat Stage D as mechanism-only evidence; do not let the uploaded fragile_full endpoint table override Stage C boundary truth.
+
+Likely VarTD beat explanation (consistency check, not theorem)
+NUM_STEPS=128
+episode_len=26
+LCM=1664
+beat_updates=13
+Reasoned interpretation: rollout/episode alignment recurs every 13 updates, which is consistent with the periodic sawtooth-like VarTD dips in enabled_full.
+
+Authority rule
+Stage B and Stage C are authoritative for boundary claims.
+Stage D is supportive mechanism evidence only.
+
+Outputs
+- stageE_archival_audit.txt
+- claims_to_evidence_map.csv
+- authoritative_vs_supportive_evidence.csv

@@ -1,0 +1,60 @@
+Stage D representative mechanistic traces report
+
+Frozen prerequisites verified
+repo_root=/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair
+project_plan=project_v2_1.txt
+stagec_report=runs/stageC_subset_refine_reports/STAGE_C_SUBSET_FULL_HORIZON_REPORT.txt
+stagec_alpha_boundary=runs/stageC_subset_refine_reports/stageC_subset_refine_alpha_boundary.csv
+stagec_by_point=runs/stageC_subset_refine_reports/stageC_subset_refine_by_point.csv
+stageb_bridge_by_point=runs/stageB_completion_bridge_reports/stageB_bridge_by_point.csv
+gate5_master=baselines/IPPO/ippo_ff_mpe_gate5_energy_gated.py
+
+Locked constants
+R0=-27.256548
+D0=0.733348
+R_REF_SHORT=-22.315781
+R_THRESH_SHORT=-24.786164
+R_REF_FULL=-24.779596
+R_THRESH_FULL=-26.018072
+EPS_OCC=0.2
+M_EVAL=100
+NUM_ENVS=25
+NUM_STEPS=128
+SEEDS=30..61 (32 total)
+
+Stage C completion evidence
+stage_c_subset_complete=yes
+completed_runs=1088
+expected_runs=1088
+missing_runs=0
+right_censored_count=11
+
+Interpretation constraint
+Stage C completed successfully, but it did not produce an interior full-horizon in-domain crossing. Alpha=0.0 stayed above threshold through c_upd=0.58, and alpha=0.1..1.0 remained right-censored above c_upd=1.0. Therefore this Stage D package uses one full-horizon enabled exemplar, one full-horizon fragile exemplar, and one accepted short-horizon disabled exemplar.
+
+Selected conditions
+condition=enabled_full stage_source=Stage C horizon=full alpha=1.000 c_upd=0.900 expected_status=learning-enabled full-horizon exemplar
+rationale=Strongest learning-enabled full-horizon point in the completed Stage C by-point table.
+condition=fragile_full stage_source=Stage C horizon=full alpha=0.000 c_upd=0.580 expected_status=boundary-near / fragile full-horizon exemplar
+rationale=Largest sampled in-domain alpha=0.0 Stage C refine point; Stage C says the true full-horizon boundary lies above this sampled band.
+condition=disabled_short stage_source=Stage B horizon=short alpha=0.000 c_upd=0.600 expected_status=disabled within accepted short horizon
+rationale=First accepted in-domain short-horizon alpha=0.0 point beyond the full-horizon fragile band with P_learn < 0.5.
+note=This is a short-horizon disabled exemplar only. It must not be described as a full-horizon in-domain crossing.
+
+Per-condition endpoint summaries
+condition=enabled_full eval_return_end_mean=-23.272034±0.747570 eval_dbar_post_mean=0.483629±0.019935 eval_occupied_post_mean=0.410937±0.070864 eval_CSR_post=0.004687±0.008418 mean_update_fraction=0.162360±0.005617 final_executed_updates=50.656250±1.752590 final_energy=0.555513±0.277644 final_vartd=4.992374±0.192377
+condition=fragile_full eval_return_end_mean=-26.837152±3.792383 eval_dbar_post_mean=0.738067±0.221743 eval_occupied_post_mean=0.225625±0.108477 eval_CSR_post=0.000937±0.002961 mean_update_fraction=0.003205±0.000000 final_executed_updates=1.000000±0.000000 final_energy=0.420000±0.000000 final_vartd=0.157806±0.023618
+condition=disabled_short eval_return_end_mean=-26.837152±3.792383 eval_dbar_post_mean=0.738067±0.221743 eval_occupied_post_mean=0.225625±0.108477 eval_CSR_post=0.000937±0.002961 mean_update_fraction=0.008000±0.000000 final_executed_updates=1.000000±0.000000 final_energy=0.400000±0.000000 final_vartd=0.159518±0.021990
+
+Outputs
+- stageD_condition_manifest.csv
+- stageD_endpoint_summary_all_conditions.csv
+- STAGE_D_REPRESENTATIVE_MECHANISTIC_TRACES_REPORT.txt
+- stageD_manifest.json
+- cross_condition_plots/*.png
+- conditions/<condition>/seed_XX/trace_per_update.csv
+- conditions/<condition>/seed_XX/eval_summary.json
+- conditions/<condition>/seed_endpoint_summary.csv
+- conditions/<condition>/trace_per_seed_long.csv
+- conditions/<condition>/trace_aggregate.csv
+- conditions/<condition>/plots/*.png
