@@ -1,0 +1,19 @@
+phase,label,family,metric_horizon,total_timesteps,alpha,c_upd,support_mode,support_total,support_start_update,support_window_updates,borrow_limit,borrow_interest,checkpoint_eval_every,note
+extension_full,fragile_full__base__t1m__a0p00__c0p58,base,full,1000000,0.0,0.58,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,fragile_full__support__t1m__a0p00__c0p58,support,full,1000000,0.0,0.58,frontload,0.6,0,31,0.0,0.0,20,Pure support-injection intervention.
+extension_full,fragile_full__borrow__t1m__a0p00__c0p58,borrow,full,1000000,0.0,0.58,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.
+extension_full,fragile_full__base__t4m__a0p00__c0p58,base,long4m,4000000,0.0,0.58,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,fragile_full__support__t4m__a0p00__c0p58,support,long4m,4000000,0.0,0.58,frontload,0.6,0,125,0.0,0.0,20,Pure support-injection intervention.
+extension_full,fragile_full__borrow__t4m__a0p00__c0p58,borrow,long4m,4000000,0.0,0.58,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.
+extension_full,edge_full__base__t1m__a0p10__c1p00,base,full,1000000,0.1,1.0,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,edge_full__support__t1m__a0p10__c1p00,support,full,1000000,0.1,1.0,frontload,0.6,0,31,0.0,0.0,20,Pure support-injection intervention.
+extension_full,edge_full__borrow__t1m__a0p10__c1p00,borrow,full,1000000,0.1,1.0,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.
+extension_full,edge_full__base__t4m__a0p10__c1p00,base,long4m,4000000,0.1,1.0,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,edge_full__support__t4m__a0p10__c1p00,support,long4m,4000000,0.1,1.0,frontload,0.6,0,125,0.0,0.0,20,Pure support-injection intervention.
+extension_full,edge_full__borrow__t4m__a0p10__c1p00,borrow,long4m,4000000,0.1,1.0,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.
+extension_full,enabled_full__base__t1m__a1p00__c0p90,base,full,1000000,1.0,0.9,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,enabled_full__support__t1m__a1p00__c0p90,support,full,1000000,1.0,0.9,frontload,0.6,0,31,0.0,0.0,20,Pure support-injection intervention.
+extension_full,enabled_full__borrow__t1m__a1p00__c0p90,borrow,full,1000000,1.0,0.9,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.
+extension_full,enabled_full__base__t4m__a1p00__c0p90,base,long4m,4000000,1.0,0.9,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+extension_full,enabled_full__support__t4m__a1p00__c0p90,support,long4m,4000000,1.0,0.9,frontload,0.6,0,125,0.0,0.0,20,Pure support-injection intervention.
+extension_full,enabled_full__borrow__t4m__a1p00__c0p90,borrow,long4m,4000000,1.0,0.9,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.

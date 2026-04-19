@@ -1,0 +1,5 @@
+condition,phase,family,metric_horizon,alpha,c_upd,total_timesteps,checkpoint_behavior_class,checkpoint_count,checkpoint_first_return,checkpoint_peak_return,checkpoint_peak_update,checkpoint_final_return,checkpoint_delta_first_to_final,checkpoint_delta_peak_to_final
+anchor_short_fail__base__t400k__a0p00__c0p60,reproduce_baseline,base,short,0.0,0.6,400000,flat,6,-25.888891220092773,-25.888891220092773,19.0,-25.888891220092773,0.0,0.0
+anchor_fragile_full__base__t1m__a0p00__c0p58,reproduce_baseline,base,full,0.0,0.58,1000000,flat,15,-25.888891220092773,-25.888891220092773,19.0,-25.888891220092773,0.0,0.0
+anchor_edge_full__base__t1m__a0p10__c1p00,reproduce_baseline,base,full,0.1,1.0,1000000,net_improvement,15,-25.888891220092773,-24.47317123413086,239.0,-24.4753360748291,1.4135551452636719,-0.0021648406982421875
+anchor_enabled_full__base__t1m__a1p00__c0p90,reproduce_baseline,base,full,1.0,0.9,1000000,net_improvement,15,-24.32377052307129,-23.266725540161133,299.0,-23.266725540161133,1.0570449829101562,0.0

@@ -1,0 +1,37 @@
+{
+  "baseline_learn_prob_tol": 0.1,
+  "baseline_return_tol": 0.35,
+  "failing_conditions": [],
+  "n_reproduction_conditions": 4,
+  "overall_reproduction_pass": true,
+  "reproduction_gate_signature": {
+    "accepted_master_sha256": "0b4f7f5181e9407d1154d3d0f4e6e8704ba4f4365ef2d946ca2238c9b8564943",
+    "checkpoint_eval_every": 20,
+    "generated_master_sha256": "f15c9f62f6d6012ac04a4a395a1ea7e61820241c7198976dfd8784e2a18589c9",
+    "package_versions": {
+      "chex": "0.1.90",
+      "distrax": "0.1.5",
+      "flax": "0.10.4",
+      "jax": "0.4.36",
+      "jaxlib": "0.4.36",
+      "matplotlib": "3.10.8",
+      "numpy": "1.26.4",
+      "optax": "0.2.5",
+      "pandas": "2.3.3"
+    },
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python_version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+    "script_path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/stageE_clipped_robustness_extension_rigorous_v5_reproguard.py",
+    "script_sha256": "854975b5e4507ff4c44d5426504baae3cbc43d280717a4e3f4bc43af012b3b0c",
+    "seed_count": 32,
+    "seed_key_scheme": "hydra_single_seed_split",
+    "seed_start": 30,
+    "seed_stop_exclusive": 62,
+    "stagee_script_version": "stageE_clipped_robustness_extension_rigorous_v5_reproguard"
+  },
+  "script_path": "/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/stageE_clipped_robustness_extension_rigorous_v5_reproguard.py",
+  "script_sha256": "854975b5e4507ff4c44d5426504baae3cbc43d280717a4e3f4bc43af012b3b0c",
+  "seed_key_scheme": "hydra_single_seed_split",
+  "stagee_script_version": "stageE_clipped_robustness_extension_rigorous_v5_reproguard",
+  "timestamp_utc": "2026-03-27T08:00:13+00:00"
+}

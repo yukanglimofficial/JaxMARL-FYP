@@ -1,0 +1,4 @@
+phase,label,family,metric_horizon,total_timesteps,alpha,c_upd,support_mode,support_total,support_start_update,support_window_updates,borrow_limit,borrow_interest,checkpoint_eval_every,note
+rescue_short,rescue_short_anchor__base__t400k__a0p00__c0p60,base,short,400000,0.0,0.6,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+rescue_short,rescue_short_anchor__support__t400k__a0p00__c0p60,support,short,400000,0.0,0.6,frontload,0.6,0,12,0.0,0.0,20,Pure support-injection intervention.
+rescue_short,rescue_short_anchor__borrow__t400k__a0p00__c0p60,borrow,short,400000,0.0,0.6,none,0.0,0,1,0.6,0.02,20,Pure borrowing intervention.

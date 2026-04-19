@@ -1,0 +1,5 @@
+phase,label,family,metric_horizon,total_timesteps,alpha,c_upd,support_mode,support_total,support_start_update,support_window_updates,borrow_limit,borrow_interest,checkpoint_eval_every,note
+reproduce_baseline,anchor_short_fail__base__t400k__a0p00__c0p60,base,short,400000,0.0,0.6,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+reproduce_baseline,anchor_fragile_full__base__t1m__a0p00__c0p58,base,full,1000000,0.0,0.58,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+reproduce_baseline,anchor_edge_full__base__t1m__a0p10__c1p00,base,full,1000000,0.1,1.0,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+reproduce_baseline,anchor_enabled_full__base__t1m__a1p00__c0p90,base,full,1000000,1.0,0.9,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
