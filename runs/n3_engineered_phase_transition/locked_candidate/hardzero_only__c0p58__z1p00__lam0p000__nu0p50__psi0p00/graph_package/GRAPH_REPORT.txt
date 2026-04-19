@@ -1,0 +1,65 @@
+N=3 engineered phase-transition graph package
+script_version=n3_engineered_phase_transition_v2_rigorous_final
+
+This package documents an engineered absorbing-state-like crossover search in late update activity for N=3.
+It must be described as an explicit engineered extension, not as latent evidence that the accepted clipped thesis core contained a true thermodynamic phase transition.
+
+Locked candidate
+alpha_transition_guess=0.042499999999999996
+alpha_transition_hi=0.043
+alpha_transition_lo=0.042
+c_upd=0.58
+candidate_pass=0
+candidate_pass_profile=strict
+chi_peak_alpha=0.062
+chi_peak_interior=1
+chi_peak_ratio=2.029797377830751
+chi_peak_value=1.7523235625225756e-05
+depr_lambda=0.0
+depr_nu=0.5
+depr_psi=0.0
+late_window_updates=313
+left_edge_active_blocks_mean=1.0625
+left_edge_alpha=0.03
+left_edge_late_update_count_mean=1.0625
+left_edge_p_active=0.8125
+left_edge_p_bursty=0.8125
+left_edge_p_sustained=0.0
+left_edge_rho=0.0033945686900958465
+mechanism=hardzero_only
+mechanism_tag=hardzero_only__c0p58__z1p00__lam0p000__nu0p50__psi0p00
+n_seeds=32
+p_active_span=0.1875
+p_sustained_span=0.96875
+p_sustained_violations=4
+pass_relaxed_1=0
+pass_relaxed_2=0
+pass_strict=0
+refined_alpha_values=[0.03, 0.031, 0.032, 0.033, 0.034, 0.035, 0.036, 0.037, 0.038, 0.039, 0.04, 0.041, 0.042, 0.043, 0.044, 0.045, 0.046, 0.047, 0.048, 0.049, 0.05, 0.051, 0.052, 0.053, 0.054, 0.055, 0.056, 0.057, 0.058, 0.059, 0.06, 0.061, 0.062, 0.063, 0.064, 0.065, 0.066, 0.067, 0.068, 0.069, 0.07]
+rho_span=0.012180511182108628
+rho_violations=0
+right_edge_active_blocks_mean=3.84375
+right_edge_alpha=0.07
+right_edge_late_update_count_mean=4.875
+right_edge_p_active=0.96875
+right_edge_p_bursty=0.0
+right_edge_p_sustained=0.96875
+right_edge_rho=0.015575079872204474
+selected_candidate_pass=0
+selection_mode=best_negative_result
+selection_tier_index=3
+selection_tier_name=fallback_best_negative_result
+strict_candidate_pass=0
+total_violations=4
+z_cut=1.0
+
+Graph interpretation
+Primary activity graph: p_sustained_vs_alpha.png
+Diagnostic any-burst graph: p_active_any_vs_alpha.png
+This locked candidate should be reported as a best-available negative-result candidate chosen by the predeclared relaxation ladder.
+If the locked rerun still fails the strict criteria, the graph package supports an honest negative result: no convincing engineered phase transition was found despite the final best-effort search.
+
+Representative traces
+tag=inactive_side alpha=0.03 seed=30 file=representative_trace_inactive_side_alpha_0.030_seed_30.png
+tag=crossover alpha=0.043 seed=30 file=representative_trace_crossover_alpha_0.043_seed_30.png
+tag=active_side alpha=0.07 seed=30 file=representative_trace_active_side_alpha_0.070_seed_30.png
