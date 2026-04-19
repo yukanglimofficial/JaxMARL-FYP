@@ -1,0 +1,32 @@
+N=3 finalized-candidate Stage-E intervention bridge report
+script_version=n3_stageE_candidate_interventions_v3_groupbyfix
+
+This is a post-selection perturbation analysis of the finalized engineered N=3 crossover candidate.
+It is intended to connect the accepted Stage-E intervention semantics to the finalized hard-zero candidate.
+It should be labeled exploratory/post hoc rather than confirmatory discovery.
+
+Locked finalized candidate
+attempt_name=hardzero_step003
+z_cut=1.0
+depr_lambda=0.0
+depr_psi=0.0
+raw_alpha_transition_lo=0.04
+raw_alpha_transition_hi=0.043
+raw_alpha_transition_guess=0.041499999999999995
+certification_label=strict_raw_pass
+alpha_grid=[0.0, 0.003, 0.006, 0.009, 0.012, 0.015, 0.018, 0.021, 0.024, 0.025, 0.027, 0.028, 0.03, 0.031, 0.033, 0.034, 0.036, 0.037, 0.039, 0.04, 0.042, 0.043, 0.045, 0.046, 0.048, 0.049, 0.051, 0.052, 0.054, 0.055, 0.057, 0.058, 0.06, 0.061, 0.063, 0.064, 0.066, 0.067, 0.069, 0.07, 0.072, 0.073, 0.075, 0.076, 0.078, 0.079, 0.081, 0.082, 0.084, 0.085, 0.087, 0.088, 0.09, 0.093, 0.096, 0.099, 0.102, 0.105, 0.108]
+
+Family summary
+family=base candidate_pass=0 transition_status=unresolved_or_blunted alpha_transition_lo=0.042000 alpha_transition_hi=0.043000 alpha_transition_guess=0.042500 left_p_sustained=0.000000 right_p_sustained=1.000000 left_late_updates=0.000000 right_late_updates=9.187500 chi_peak_ratio=2.949401 p_sustained_violations=4
+family=support candidate_pass=1 transition_status=strict_resolved_on_grid alpha_transition_lo=0.034000 alpha_transition_hi=0.036000 alpha_transition_guess=0.035000 left_p_sustained=0.000000 right_p_sustained=1.000000 left_late_updates=0.000000 right_late_updates=9.750000 chi_peak_ratio=3.006431 p_sustained_violations=0
+family=borrow candidate_pass=0 transition_status=right_shifted_above_grid_or_suppressed alpha_transition_lo=0.000000 alpha_transition_hi=0.003000 alpha_transition_guess=0.000000 left_p_sustained=0.000000 right_p_sustained=0.000000 left_late_updates=0.000000 right_late_updates=0.000000 chi_peak_ratio=0.000000 p_sustained_violations=0
+
+Graph package
+graph_dir=/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/n3_stageE_candidate_interventions/graph_package
+Headline graph: p_sustained_vs_alpha_family_overlay.png
+This graph shows whether support or borrowing shift, sharpen, blunt, or saturate the engineered crossover.
+
+Representative traces
+family=base alpha=0.042 seed=33 file=representative_trace_base_alpha_0.042_seed_33.png
+family=support alpha=0.036 seed=30 file=representative_trace_support_alpha_0.036_seed_30.png
+family=borrow alpha=0.0 seed=30 file=representative_trace_borrow_alpha_0.000_seed_30.png
