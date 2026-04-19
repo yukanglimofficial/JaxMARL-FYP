@@ -1,0 +1,25 @@
+Importing submoduled environments...
+Submoduled environments not found. Skipping import.
+[upd 0] u=1 upd_ctr=1 opt_step=16 E=0.163 g=0.089 VarTD=0.203202 ret_end=-28.238 dbar_end=0.769 occ_end=0.170 CSR_train=0.000 done_count=100
+[upd 10] u=0 upd_ctr=1 opt_step=16 E=0.829 g=0.094 VarTD=0.178732 ret_end=-27.407 dbar_end=0.753 occ_end=0.200 CSR_train=0.000 done_count=125
+[upd 20] u=0 upd_ctr=2 opt_step=32 E=0.604 g=0.096 VarTD=0.138709 ret_end=-28.061 dbar_end=0.746 occ_end=0.152 CSR_train=0.000 done_count=125
+[upd 30] u=0 upd_ctr=3 opt_step=48 E=0.358 g=0.100 VarTD=0.146560 ret_end=-27.146 dbar_end=0.732 occ_end=0.224 CSR_train=0.000 done_count=125
+[upd 40] u=0 upd_ctr=4 opt_step=64 E=0.191 g=0.110 VarTD=0.141301 ret_end=-25.994 dbar_end=0.703 occ_end=0.232 CSR_train=0.000 done_count=125
+[upd 50] u=0 upd_ctr=4 opt_step=64 E=0.946 g=0.102 VarTD=0.161692 ret_end=-26.664 dbar_end=0.727 occ_end=0.072 CSR_train=0.000 done_count=125
+[upd 60] u=0 upd_ctr=5 opt_step=80 E=0.774 g=0.107 VarTD=0.140152 ret_end=-26.895 dbar_end=0.712 occ_end=0.176 CSR_train=0.000 done_count=125
+[upd 70] u=0 upd_ctr=6 opt_step=96 E=0.652 g=0.109 VarTD=0.145747 ret_end=-26.468 dbar_end=0.705 occ_end=0.224 CSR_train=0.000 done_count=125
+[upd 80] u=0 upd_ctr=7 opt_step=112 E=0.505 g=0.111 VarTD=0.147190 ret_end=-25.537 dbar_end=0.700 occ_end=0.160 CSR_train=0.000 done_count=125
+[upd 90] u=0 upd_ctr=8 opt_step=128 E=0.443 g=0.126 VarTD=0.143114 ret_end=-25.562 dbar_end=0.660 occ_end=0.160 CSR_train=0.000 done_count=125
+[upd 100] u=0 upd_ctr=9 opt_step=144 E=0.358 g=0.104 VarTD=0.150872 ret_end=-27.420 dbar_end=0.720 occ_end=0.152 CSR_train=0.000 done_count=125
+[upd 110] u=0 upd_ctr=10 opt_step=160 E=0.265 g=0.116 VarTD=0.139578 ret_end=-26.236 dbar_end=0.686 occ_end=0.192 CSR_train=0.000 done_count=125
+[upd 120] u=0 upd_ctr=11 opt_step=176 E=0.207 g=0.120 VarTD=0.168789 ret_end=-26.110 dbar_end=0.676 occ_end=0.216 CSR_train=0.000 done_count=125
+[Gate5 check] update_counter violations: t0=0 diffs=0
+[Gate5 check] opt_step violations: t0=0 diffs=0 (expected_inc=16)
+[Gate5 check] NaN masking: nan_on_skip=True finite_on_update=True
+[Gate5 summary] mean_update_fraction=0.0880 final_executed_updates_mean=11.00
+[Gate5 eval] done_count mean=100.0 CSR mean=0.0000 len_end_mean=26.00
+[Gate5 eval] episodes_per_env=4 T_eval=104
+[Gate5 eval-debug] locked_eps_occ=0.20 pre(step25): dbar_end=0.497283 occupied_end_mean=0.380000 max_tilde_end_mean=0.738786 CSR@locked=0.000000
+[Gate5 eval-debug] locked_eps_occ=0.20 post(step26): dbar_end=0.498614 occupied_end_mean=0.340000 max_tilde_end_mean=0.738218 CSR@locked=0.000000
+[Gate5 eval-debug] CSR_pre@0.10=0.0000 CSR_pre@0.15=0.0000 CSR_pre@0.20=0.0000 CSR_pre@0.25=0.0000 CSR_pre@0.30=0.0000
+[Gate5 eval-debug] CSR_post@0.10=0.0000 CSR_post@0.15=0.0000 CSR_post@0.20=0.0000 CSR_post@0.25=0.0000 CSR_post@0.30=0.0000
