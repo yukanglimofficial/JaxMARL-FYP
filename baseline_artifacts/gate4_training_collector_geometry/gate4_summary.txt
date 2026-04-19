@@ -1,0 +1,52 @@
+GATE 4 — Training rollout collector uses step_env + masked reset + terminal geometry metrics (GO)
+
+Env (locked baseline):
+- ENV_NAME=MPE_simple_spread_v3
+- ENV_KWARGS: N=3, local_ratio=0.5, max_cycles=25, action_type=Discrete
+- NUM_ENVS=25
+- NUM_STEPS=128
+- TOTAL_TIMESTEPS=1_000_000
+- SEED=30
+- WANDB_MODE=disabled
+
+Critical terminal correctness context:
+- JaxMARL env.step(...) auto-resets on dones["__all__"]; this corrupts terminal observations for geometry.
+- Gate 4 collector steps with env.step_env(...) and performs explicit vmapped reset + masked reset (tree_where) so terminal metrics are computed on post-transition terminal obs before reset.
+
+Episode length contract:
+- Gate 3 established: episode_len observed = 26 = max_cycles + 1.
+- Gate 4 logs show len_end_mean≈26.00 consistently (collector respects the 26-step episode length).
+
+Terminal geometry metrics computed at episode ends:
+- tilde_d per landmark (per-env terminal per-landmark min distance)
+- min_dists_end = sum over landmarks of per-landmark min distance (terminal)
+- occupied_end = number of landmarks with tilde_d < eps_occ
+- CSR_train = fraction of episode ends with occupied_end == N
+- dbar_end = mean(min_dists_end)/N
+
+eps_occ handling:
+- Default eps_occ=0.1 produced degenerate CSR_train (all zeros during training in observed prints).
+- ONE allowed adjustment applied: eps_occ set to 0.2.
+- With eps_occ=0.2, CSR_train is non-degenerate (mostly 0 with occasional spikes ~0.008–0.01).
+
+Observed training behavior (eps_occ=0.2):
+- return_end_mean improves from about -27.6 toward roughly -22 range.
+- min_dists_end_mean drops early from ~2.33 toward ~1.55–1.75 and stays finite.
+- CSR_train shows occasional successes; not always 0 and not always 1.
+- done_count per update typically ~125 (sometimes 100), consistent with NUM_STEPS=128 and episode_len=26.
+
+Benign console messages:
+- "Submoduled environments not found. Skipping import." = optional jaxrobotarium not installed; unrelated to MPE.
+- XLA warning about backend config parsing observed but training proceeds normally.
+
+Hydra run directory (final evidence run):
+- full_1e6_eps0p2/
+  - stdout.log
+  - .hydra/{config.yaml,hydra.yaml,overrides.yaml}
+  - ippo_ff_gate4_return_MPE_simple_spread_v3.png
+  - ippo_ff_gate4_episode_len_MPE_simple_spread_v3.png
+  - ippo_ff_gate4_min_dists_end_MPE_simple_spread_v3.png
+  - ippo_ff_gate4_CSR_train_MPE_simple_spread_v3.png
+
+Script provenance:
+- baselines/IPPO/ippo_ff_mpe_gate4_stepenv.py copied into this artifact folder as ippo_ff_mpe_gate4_stepenv.py

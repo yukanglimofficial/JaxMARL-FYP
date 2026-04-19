@@ -1,0 +1,24 @@
+Python: 3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]
+Python exe: /home/legend/jaxmarl_phase_project/.venv/bin/python
+JAX version: 0.4.36
+Devices: [CudaDevice(id=0)]
+
+Env: MPE_simple_spread_v3
+Agents: ['agent_0', 'agent_1', 'agent_2']
+Num agents: 3
+
+Signatures (audit):
+  env.step     : (key: jax.Array, state: jaxmarl.environments.multi_agent_env.State, actions: Dict[str, Union[jax.Array, numpy.ndarray, numpy.bool_, numpy.number]], reset_state: Optional[jaxmarl.environments.multi_agent_env.State] = None) -> Tuple[Dict[str, Union[jax.Array, numpy.ndarray, numpy.bool_, numpy.number]], jaxmarl.environments.multi_agent_env.State, Dict[str, float], Dict[str, bool], Dict]
+  Has step_env?: True
+  env.step_env : (key: jax.Array, state: jaxmarl.environments.mpe.simple.State, actions: dict)
+
+Terminal transition found at t=25 using step_env (done_all=True).
+
+Terminal transition comparison:
+  step_env done_all: True
+  step     done_all: True
+  L1(obs_step_env - obs_step): 25.80736541748047
+
+GO: step_env returns a different observation than step at terminal transition.
+=> Consistent with step() doing autoreset / post-terminal handling.
+=> Use step_env for terminal-correct geometry metrics.

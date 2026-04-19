@@ -1,0 +1,41 @@
+{
+  "env": {
+    "name": "MPE_simple_spread_v3",
+    "N": 3,
+    "local_ratio": 0.5,
+    "max_cycles": 25,
+    "action_type": "Discrete"
+  },
+  "agents_order": [
+    "agent_0",
+    "agent_1",
+    "agent_2"
+  ],
+  "obs_dim": 18,
+  "slicing_hypothesis": {
+    "self_vel": [
+      0,
+      2
+    ],
+    "self_pos": [
+      2,
+      4
+    ],
+    "landmark_rel": [
+      4,
+      10
+    ],
+    "landmark_rel_reshape": [
+      3,
+      2
+    ]
+  },
+  "checks": {
+    "tol": 1e-05,
+    "batchify_roundtrip_max_abs_error": 0.0,
+    "reconstruction_max_error": 0.0,
+    "translation_invariance_max_abs_diff": 0.0,
+    "translation_shift_invariance_max_abs_diff": 1.1920928955078125e-07
+  },
+  "seed": 0
+}

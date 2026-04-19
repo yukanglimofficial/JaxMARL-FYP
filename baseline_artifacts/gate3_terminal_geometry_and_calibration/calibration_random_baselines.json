@@ -1,0 +1,33 @@
+{
+  "env": {
+    "name": "MPE_simple_spread_v3",
+    "N": 3,
+    "local_ratio": 0.5,
+    "max_cycles": 25,
+    "action_type": "Discrete"
+  },
+  "rollout": {
+    "NUM_ENVS": 25,
+    "B_EPISODES_TOTAL": 100,
+    "EPISODES_PER_ENV": 4,
+    "T_STEPS": 104
+  },
+  "metrics": {
+    "eps_occ": 0.1,
+    "d0_mean_per_landmark_terminal_distance": 0.7333478800455729,
+    "R0_mean_team_episode_return": -27.2565478515625,
+    "CSR_random": 0.0,
+    "P_tilde_d_lt_eps_occ_random": 0.013333333333333334
+  },
+  "provenance": {
+    "seed": 0,
+    "git_commit": "4526a7fd547fb63ec5affa60d544da2b17ccfff5",
+    "python": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "jax_version": "0.4.36"
+  },
+  "timing": {
+    "random_rollout_wall_s": 0.003846406936645508,
+    "approx_env_steps_per_second": 675955.5197421435
+  }
+}

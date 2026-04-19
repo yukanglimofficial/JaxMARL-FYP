@@ -1,0 +1,18 @@
+Gate 5 auto-summary
+
+ENV_NAME=MPE_simple_spread_v3
+NUM_UPDATES=10
+mean_update_fraction=1.000000
+final_executed_updates_mean=10.000000
+final_return_end_mean=-26.766146
+final_min_dists_end_mean=2.133910
+final_CSR_train=0.008000
+final_energy=1.000000
+final_VarTD=0.169127
+eval_done_count_mean=100.000000
+eval_CSR_mean=0.000000
+eval_len_end_mean=26.000000
+eval_return_end_mean=-23.420990
+eval_dbar_end=0.474523
+episodes_per_env=4
+T_eval=104

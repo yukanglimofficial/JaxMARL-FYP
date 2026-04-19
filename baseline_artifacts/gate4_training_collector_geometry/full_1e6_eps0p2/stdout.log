@@ -1,0 +1,36 @@
+Importing submoduled environments...
+Submoduled environments not found. Skipping import.
+2026-02-10 07:20:53.548450: W external/xla/xla/service/gpu/ir_emitter_unnested.cc:1171] Unable to parse backend config for custom call: Could not convert JSON string to proto: : Root element must be a message.
+Fall back to parse the raw backend config str.
+[upd 0] return_end_mean=-27.550 len_end_mean=26.00 min_dists_end_mean=2.326 dbar_end=0.775 CSR_train=0.000 done_count=100
+[upd 10] return_end_mean=-25.287 len_end_mean=26.00 min_dists_end_mean=1.967 dbar_end=0.656 CSR_train=0.000 done_count=125
+[upd 20] return_end_mean=-25.153 len_end_mean=26.00 min_dists_end_mean=1.902 dbar_end=0.634 CSR_train=0.000 done_count=125
+[upd 30] return_end_mean=-23.593 len_end_mean=26.00 min_dists_end_mean=1.725 dbar_end=0.575 CSR_train=0.000 done_count=125
+[upd 40] return_end_mean=-23.606 len_end_mean=26.00 min_dists_end_mean=1.650 dbar_end=0.550 CSR_train=0.000 done_count=125
+[upd 50] return_end_mean=-23.285 len_end_mean=26.00 min_dists_end_mean=1.560 dbar_end=0.520 CSR_train=0.000 done_count=125
+[upd 60] return_end_mean=-24.658 len_end_mean=26.00 min_dists_end_mean=1.710 dbar_end=0.570 CSR_train=0.008 done_count=125
+[upd 70] return_end_mean=-23.110 len_end_mean=26.00 min_dists_end_mean=1.738 dbar_end=0.579 CSR_train=0.000 done_count=125
+[upd 80] return_end_mean=-22.988 len_end_mean=26.00 min_dists_end_mean=1.624 dbar_end=0.541 CSR_train=0.000 done_count=125
+[upd 90] return_end_mean=-22.911 len_end_mean=26.00 min_dists_end_mean=1.574 dbar_end=0.525 CSR_train=0.000 done_count=125
+[upd 100] return_end_mean=-22.366 len_end_mean=26.00 min_dists_end_mean=1.562 dbar_end=0.521 CSR_train=0.000 done_count=125
+[upd 110] return_end_mean=-21.691 len_end_mean=26.00 min_dists_end_mean=1.548 dbar_end=0.516 CSR_train=0.000 done_count=125
+[upd 120] return_end_mean=-22.224 len_end_mean=26.00 min_dists_end_mean=1.651 dbar_end=0.550 CSR_train=0.000 done_count=125
+[upd 130] return_end_mean=-22.457 len_end_mean=26.00 min_dists_end_mean=1.620 dbar_end=0.540 CSR_train=0.000 done_count=100
+[upd 140] return_end_mean=-22.209 len_end_mean=26.00 min_dists_end_mean=1.586 dbar_end=0.529 CSR_train=0.000 done_count=125
+[upd 150] return_end_mean=-22.435 len_end_mean=26.00 min_dists_end_mean=1.636 dbar_end=0.545 CSR_train=0.008 done_count=125
+[upd 160] return_end_mean=-22.448 len_end_mean=26.00 min_dists_end_mean=1.635 dbar_end=0.545 CSR_train=0.000 done_count=125
+[upd 170] return_end_mean=-22.575 len_end_mean=26.00 min_dists_end_mean=1.593 dbar_end=0.531 CSR_train=0.000 done_count=125
+[upd 180] return_end_mean=-22.824 len_end_mean=26.00 min_dists_end_mean=1.597 dbar_end=0.532 CSR_train=0.000 done_count=125
+[upd 190] return_end_mean=-22.497 len_end_mean=26.00 min_dists_end_mean=1.627 dbar_end=0.542 CSR_train=0.000 done_count=125
+[upd 200] return_end_mean=-21.495 len_end_mean=26.00 min_dists_end_mean=1.615 dbar_end=0.538 CSR_train=0.000 done_count=125
+[upd 210] return_end_mean=-22.043 len_end_mean=26.00 min_dists_end_mean=1.584 dbar_end=0.528 CSR_train=0.000 done_count=125
+[upd 220] return_end_mean=-21.970 len_end_mean=26.00 min_dists_end_mean=1.615 dbar_end=0.538 CSR_train=0.000 done_count=125
+[upd 230] return_end_mean=-21.734 len_end_mean=26.00 min_dists_end_mean=1.557 dbar_end=0.519 CSR_train=0.000 done_count=125
+[upd 240] return_end_mean=-22.776 len_end_mean=26.00 min_dists_end_mean=1.692 dbar_end=0.564 CSR_train=0.000 done_count=125
+[upd 250] return_end_mean=-23.406 len_end_mean=26.00 min_dists_end_mean=1.752 dbar_end=0.584 CSR_train=0.000 done_count=125
+[upd 260] return_end_mean=-23.398 len_end_mean=26.00 min_dists_end_mean=1.645 dbar_end=0.548 CSR_train=0.000 done_count=100
+[upd 270] return_end_mean=-22.413 len_end_mean=26.00 min_dists_end_mean=1.654 dbar_end=0.551 CSR_train=0.000 done_count=125
+[upd 280] return_end_mean=-22.370 len_end_mean=26.00 min_dists_end_mean=1.602 dbar_end=0.534 CSR_train=0.000 done_count=125
+[upd 290] return_end_mean=-21.962 len_end_mean=26.00 min_dists_end_mean=1.645 dbar_end=0.548 CSR_train=0.000 done_count=125
+[upd 300] return_end_mean=-22.066 len_end_mean=26.00 min_dists_end_mean=1.630 dbar_end=0.543 CSR_train=0.008 done_count=125
+[upd 310] return_end_mean=-23.318 len_end_mean=26.00 min_dists_end_mean=1.660 dbar_end=0.553 CSR_train=0.000 done_count=125

@@ -1,0 +1,22 @@
+Importing submoduled environments...
+Submoduled environments not found. Skipping import.
+=== Gate 3: terminal geometry + obs-layout contract + random calibration (d0, R0) ===
+Output dir: /home/legend/jaxmarl_phase_project/JaxMARL/baseline_artifacts/gate3_terminal_geometry
+Env: MPE_simple_spread_v3 N=3 local_ratio=0.5 max_cycles=25 action_type=Discrete
+Agents (static order): ('agent_0', 'agent_1', 'agent_2')
+NUM_ENVS=25 episodes_per_env=4 episode_len=26 steps=104
+eps_occ=0.1
+JAX backend: gpu, devices: [CudaDevice(id=0)]
+Obs dim per agent = 18
+Batchify round-trip max abs error = 0.000e+00
+Reconstruction max error = 0.000e+00
+Translation invariance max abs diff = 0.000e+00
+Translation shift invariance max abs diff = 1.192e-07
+Wrote obs_layout_contract.json
+Random rollout wall time (compiled) = 0.0042s ; env-steps-per-second ≈ 615868.9
+Done counts per env min/max = 4/4
+Random baselines: d0=0.733348, R0=-27.256548, CSR_random=0.000000
+Random policy: P(tilde_d < eps_occ) = 0.013333 (eps_occ=0.1)
+Wrote eps_occ_sanity_histogram.png
+Wrote calibration_random_baselines.json
+GO: terminal geometry metrics + calibration OK
