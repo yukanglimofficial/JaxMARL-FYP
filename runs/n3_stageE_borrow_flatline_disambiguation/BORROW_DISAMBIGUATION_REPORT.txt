@@ -1,0 +1,76 @@
+N=3 finalized-candidate borrow-flatline disambiguation report
+script_version=n3_stageE_borrow_flatline_disambiguation_v1
+
+Purpose
+This run preserves the finalized engineered candidate and the canonical Stage-E borrowing semantics.
+Its goal is to determine whether the previously observed borrow flatline is a true suppression on the tested range or a right shift beyond the shared alpha window.
+Diagnostic borrow ablations are reported separately and must not be conflated with the canonical Stage-E borrow family.
+
+Locked finalized candidate
+attempt_name=hardzero_step003
+raw_c_upd=0.58
+raw_z_cut=1.0
+raw_alpha_transition_lo=0.04
+raw_alpha_transition_hi=0.043
+raw_alpha_transition_guess=0.041499999999999995
+certification_label=strict_raw_pass
+
+Canonical borrow sweep
+borrow_limit=0.6
+borrow_interest=0.02
+seed_range=30:62
+total_timesteps=4000000
+alpha_min=0.000
+alpha_max=0.300
+n_alpha=81
+
+Canonical borrow summary
+candidate_pass=0
+transition_status=unresolved_or_blunted
+alpha_transition_lo=0.156
+alpha_transition_hi=0.162
+alpha_transition_guess=0.159
+left_edge_p_sustained=0.0
+right_edge_p_sustained=1.0
+left_edge_late_update_count_mean=0.0
+right_edge_late_update_count_mean=25.375
+p_sustained_violations=0
+chi_peak_ratio=inf
+
+Flatline resolution classification
+canonical_candidate_pass=0
+canonical_transition_status=unresolved_or_blunted
+canonical_onset_p10=0.138
+canonical_onset_p50=0.162
+canonical_onset_p90=0.216
+canonical_right_p_sustained=1.0
+canonical_right_late_updates=25.375
+canonical_tail_debt_floor_frac=0.08246319110576923
+canonical_tail_margin_mean=0.02589814890201289
+borrow_no_interest_onset_p50=0.06
+borrow_half_interest_onset_p50=0.087
+borrow_small_limit_onset_p50=0.088
+borrow_small_limit_no_interest_onset_p50=0.06
+canonical_flatline_resolution=canonical_borrow_right_shift_partially_resolved
+interest_effect_detected=1
+limit_effect_detected=1
+
+Diagnostic borrow variants
+variant=borrow_canonical_extended label_type=canonical candidate_pass=0 transition_status=unresolved_or_blunted score=inf onset_p50=0.162 right_edge_p_sustained=1.0
+variant=borrow_half_interest_certified label_type=diagnostic_certified candidate_pass=0 transition_status=unresolved_or_blunted score=128.211265 onset_p50=0.081 right_edge_p_sustained=1.0
+variant=borrow_half_interest_probe label_type=diagnostic candidate_pass=1 transition_status=strict_resolved_on_grid score=1144.354080 onset_p50=0.087 right_edge_p_sustained=1.0
+variant=borrow_small_limit_probe label_type=diagnostic candidate_pass=1 transition_status=strict_resolved_on_grid score=1137.684042 onset_p50=0.088 right_edge_p_sustained=1.0
+variant=borrow_small_limit_no_interest_probe label_type=diagnostic candidate_pass=0 transition_status=left_shifted_below_grid_or_overactivated score=-1386.635714 onset_p50=0.06 right_edge_p_sustained=1.0
+variant=borrow_no_interest_probe label_type=diagnostic candidate_pass=0 transition_status=left_shifted_below_grid_or_overactivated score=-1675.266667 onset_p50=0.06 right_edge_p_sustained=1.0
+
+promoted_variant_for_full_seed_certification=borrow_half_interest_certified
+
+Graph package
+graph_dir=/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/runs/n3_stageE_borrow_flatline_disambiguation/graph_package
+Headline graph: p_sustained_canonical_shared_vs_extended.png
+Borrow-only disambiguation graph: p_sustained_borrow_variants_extended.png
+Mechanism graphs: borrow_recharge_vs_charge.png, borrow_break_even_alpha.png, borrow_debt_floor_frac_extended.png
+
+Interpretation rule
+Canonical Stage-E borrow claims must be based on the canonical borrow family only.
+Diagnostic borrow variants are mechanism ablations used to explain canonical flatlines; they are not replacements for the canonical Stage-E comparison.
