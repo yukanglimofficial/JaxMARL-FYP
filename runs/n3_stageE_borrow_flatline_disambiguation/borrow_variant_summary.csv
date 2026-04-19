@@ -1,0 +1,7 @@
+variant_name,label_type,borrow_limit,borrow_interest,candidate_pass,transition_status,alpha_transition_guess,right_edge_p_sustained,chi_peak_ratio,p_sustained_violations,onset_p50,score,promoted_to_certify
+borrow_canonical_extended,canonical,0.6,0.02,0,unresolved_or_blunted,0.159,1.0,inf,0.0,0.162,inf,1
+borrow_no_interest_probe,diagnostic,0.6,0.0,0,left_shifted_below_grid_or_overactivated,0.06,1.0,22.33333333333333,0.0,0.06,-1675.2666666666667,0
+borrow_half_interest_probe,diagnostic,0.6,0.01,1,strict_resolved_on_grid,0.086,1.0,4.722408026755854,1.0,0.087,1144.3540802675586,0
+borrow_small_limit_probe,diagnostic,0.3,0.02,1,strict_resolved_on_grid,0.0875,1.0,4.056404230317274,1.0,0.088,1137.6840423031726,0
+borrow_small_limit_no_interest_probe,diagnostic,0.3,0.0,0,left_shifted_below_grid_or_overactivated,0.06,1.0,51.19642857142858,0.0,0.06,-1386.6357142857141,0
+borrow_half_interest_certified,diagnostic_certified,0.6,0.01,0,unresolved_or_blunted,0.08,1.0,3.502126453076269,3.0,0.081,128.2112645307627,1

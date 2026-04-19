@@ -1,0 +1,18 @@
+{
+  "borrow_half_interest_onset_p50": 0.087,
+  "borrow_no_interest_onset_p50": 0.06,
+  "borrow_small_limit_no_interest_onset_p50": 0.06,
+  "borrow_small_limit_onset_p50": 0.088,
+  "canonical_candidate_pass": 0,
+  "canonical_flatline_resolution": "canonical_borrow_right_shift_partially_resolved",
+  "canonical_onset_p10": 0.138,
+  "canonical_onset_p50": 0.162,
+  "canonical_onset_p90": 0.216,
+  "canonical_right_late_updates": 25.375,
+  "canonical_right_p_sustained": 1.0,
+  "canonical_tail_debt_floor_frac": 0.08246319110576923,
+  "canonical_tail_margin_mean": 0.02589814890201289,
+  "canonical_transition_status": "unresolved_or_blunted",
+  "interest_effect_detected": 1,
+  "limit_effect_detected": 1
+}
