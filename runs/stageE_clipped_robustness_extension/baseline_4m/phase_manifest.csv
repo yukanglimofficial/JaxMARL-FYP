@@ -1,0 +1,5 @@
+phase,label,family,metric_horizon,total_timesteps,alpha,c_upd,support_mode,support_total,support_start_update,support_window_updates,borrow_limit,borrow_interest,checkpoint_eval_every,note
+baseline_4m,anchor_short_fail_probe__base__t4m__a0p00__c0p60,base,long4m,4000000,0.0,0.6,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+baseline_4m,anchor_fragile_full_probe__base__t4m__a0p00__c0p58,base,long4m,4000000,0.0,0.58,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+baseline_4m,anchor_edge_full_probe__base__t4m__a0p10__c1p00,base,long4m,4000000,0.1,1.0,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.
+baseline_4m,anchor_enabled_full_probe__base__t4m__a1p00__c0p90,base,long4m,4000000,1.0,0.9,none,0.0,0,1,0.0,0.0,20,Support off and borrowing off.

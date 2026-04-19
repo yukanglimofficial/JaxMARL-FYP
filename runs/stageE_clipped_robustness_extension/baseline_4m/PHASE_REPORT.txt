@@ -1,0 +1,75 @@
+Phase E0C 4M baseline robustness
+
+stagee_script_version=stageE_clipped_robustness_extension_rigorous_v5_reproguard
+script_path=/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair/stageE_clipped_robustness_extension_rigorous_v5_reproguard.py
+script_sha256=854975b5e4507ff4c44d5426504baae3cbc43d280717a4e3f4bc43af012b3b0c
+repo_root=/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair
+accepted_master=baselines/IPPO/ippo_ff_mpe_gate5_energy_gated.py
+accepted_master_sha256=0b4f7f5181e9407d1154d3d0f4e6e8704ba4f4365ef2d946ca2238c9b8564943
+generated_master=baselines/IPPO/ippo_ff_mpe_stagee_clipped_extension.py
+generated_master_sha256=f15c9f62f6d6012ac04a4a395a1ea7e61820241c7198976dfd8784e2a18589c9
+python=3.12.3
+platform=Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+seeds=30..61 (32 total)
+seed_key_scheme=hydra_single_seed_split
+phase_args={'mode': 'all', 'repo_root': '/home/legend/jaxmarl_phase_project/JaxMARL_gate5_repair', 'seed_start': 30, 'seed_stop': 62, 'checkpoint_eval_every': 20, 'support_mode': 'frontload', 'support_total': 0.6, 'support_start_update': 0, 'support_window_frac': 0.1, 'borrow_limit': 0.6, 'borrow_interest': 0.02, 'force_repatch': True, 'force_rerun': True, 'allow_unvalidated_baseline': False, 'skip_short_sweep': False, 'skip_enabled_control': False, 'skip_4m_in_extension': False}
+
+Locked constants
+R0=-27.256548
+D0=0.733348
+R_REF_SHORT=-22.315781
+R_THRESH_SHORT=-24.786164
+R_REF_FULL=-24.779596
+R_THRESH_FULL=-26.018072
+EPS_OCC=0.2
+M_EVAL=100
+NUM_ENVS=25
+NUM_STEPS=128
+E0=1.0
+E_MAX=1.0
+
+Conditions
+condition=anchor_short_fail_probe__base__t4m__a0p00__c0p60 family=base metric_horizon=long4m timesteps=4000000 alpha=0.000 c_upd=0.600 support_mode=none support_total=0.000 borrow_limit=0.000 borrow_interest=0.000
+note=Support off and borrowing off.
+condition=anchor_fragile_full_probe__base__t4m__a0p00__c0p58 family=base metric_horizon=long4m timesteps=4000000 alpha=0.000 c_upd=0.580 support_mode=none support_total=0.000 borrow_limit=0.000 borrow_interest=0.000
+note=Support off and borrowing off.
+condition=anchor_edge_full_probe__base__t4m__a0p10__c1p00 family=base metric_horizon=long4m timesteps=4000000 alpha=0.100 c_upd=1.000 support_mode=none support_total=0.000 borrow_limit=0.000 borrow_interest=0.000
+note=Support off and borrowing off.
+condition=anchor_enabled_full_probe__base__t4m__a1p00__c0p90 family=base metric_horizon=long4m timesteps=4000000 alpha=1.000 c_upd=0.900 support_mode=none support_total=0.000 borrow_limit=0.000 borrow_interest=0.000
+note=Support off and borrowing off.
+
+Per-condition endpoint summaries
+condition=anchor_short_fail_probe__base__t4m__a0p00__c0p60 eval_return_end_mean=-25.888891±2.578376 eval_dbar_post_mean=0.684417±0.151920 eval_CSR_post=0.001875±0.005351 mean_update_fraction=0.000800±0.000000 final_executed_updates=1.000000±0.000000 final_energy=0.400000±0.000000 total_support_injected=0.000000 total_debt_charge=0.000000 max_debt_level=0.000000 final_vartd=0.158692±0.024685 I_R_full_anchor_compat=0.552153
+condition=anchor_fragile_full_probe__base__t4m__a0p00__c0p58 eval_return_end_mean=-25.888891±2.578376 eval_dbar_post_mean=0.684417±0.151920 eval_CSR_post=0.001875±0.005351 mean_update_fraction=0.000800±0.000000 final_executed_updates=1.000000±0.000000 final_energy=0.420000±0.000000 total_support_injected=0.000000 total_debt_charge=0.000000 max_debt_level=0.000000 final_vartd=0.158692±0.024685 I_R_full_anchor_compat=0.552153
+condition=anchor_edge_full_probe__base__t4m__a0p10__c1p00 eval_return_end_mean=-23.861319±0.540621 eval_dbar_post_mean=0.497500±0.021127 eval_CSR_post=0.002500±0.005080 mean_update_fraction=0.012075±0.000512 final_executed_updates=15.093750±0.640533 final_energy=0.520999±0.292308 total_support_injected=0.000000 total_debt_charge=0.000000 max_debt_level=0.000000 final_vartd=0.298179±0.032591 I_R_full_anchor_compat=1.370729
+condition=anchor_enabled_full_probe__base__t4m__a1p00__c0p90 eval_return_end_mean=-26.696050±3.044107 eval_dbar_post_mean=0.801593±0.242130 eval_CSR_post=0.000937±0.002961 mean_update_fraction=0.162350±0.018760 final_executed_updates=202.937500±23.450617 final_energy=0.584512±0.279072 total_support_injected=0.000000 total_debt_charge=0.000000 max_debt_level=0.000000 final_vartd=2.621374±1.021775 I_R_full_anchor_compat=0.226285
+
+Authoritative comparison rows
+condition=anchor_short_fail_probe__base__t4m__a0p00__c0p60 source=none comparison_kind=new_long_horizon_fact note=No matched authoritative short/full baseline row exists for this condition. family=base metric_horizon=long4m phase=baseline_4m stage_d_eval_CSR_post_max_abs_diff=0.020000 stage_d_eval_dbar_post_mean_max_abs_diff=0.688448 stage_d_eval_return_end_mean_max_abs_diff=10.399012 stage_d_final_energy_max_abs_diff=0.000000 stage_d_final_executed_updates_max_abs_diff=0.000000 stage_d_final_vartd_max_abs_diff=0.079470 stage_d_mean_update_fraction_max_abs_diff=0.007200 stage_d_seed_exact_match=0.000000 stage_d_seed_match_available=1.000000 stage_d_seed_match_condition=disabled_short
+condition=anchor_fragile_full_probe__base__t4m__a0p00__c0p58 source=none comparison_kind=new_long_horizon_fact note=No matched authoritative short/full baseline row exists for this condition. family=base metric_horizon=long4m phase=baseline_4m stage_d_eval_CSR_post_max_abs_diff=0.020000 stage_d_eval_dbar_post_mean_max_abs_diff=0.688448 stage_d_eval_return_end_mean_max_abs_diff=10.399012 stage_d_final_energy_max_abs_diff=0.000000 stage_d_final_executed_updates_max_abs_diff=0.000000 stage_d_final_vartd_max_abs_diff=0.068506 stage_d_mean_update_fraction_max_abs_diff=0.002405 stage_d_seed_exact_match=0.000000 stage_d_seed_match_available=1.000000 stage_d_seed_match_condition=fragile_full
+condition=anchor_edge_full_probe__base__t4m__a0p10__c1p00 source=none comparison_kind=new_long_horizon_fact note=No matched authoritative short/full baseline row exists for this condition. family=base metric_horizon=long4m phase=baseline_4m stage_d_seed_exact_match=0.000000 stage_d_seed_match_available=0.000000 stage_d_seed_match_condition=
+condition=anchor_enabled_full_probe__base__t4m__a1p00__c0p90 source=none comparison_kind=new_long_horizon_fact note=No matched authoritative short/full baseline row exists for this condition. family=base metric_horizon=long4m phase=baseline_4m stage_d_eval_CSR_post_max_abs_diff=0.040000 stage_d_eval_dbar_post_mean_max_abs_diff=0.928548 stage_d_eval_return_end_mean_max_abs_diff=8.196644 stage_d_final_energy_max_abs_diff=0.792770 stage_d_final_executed_updates_max_abs_diff=202.000000 stage_d_final_vartd_max_abs_diff=4.097767 stage_d_mean_update_fraction_max_abs_diff=0.038938 stage_d_seed_exact_match=0.000000 stage_d_seed_match_available=1.000000 stage_d_seed_match_condition=enabled_full
+
+Checkpoint-behavior diagnostics
+condition=anchor_short_fail_probe__base__t4m__a0p00__c0p60 phase=baseline_4m family=base metric_horizon=long4m alpha=0.000000 c_upd=0.600000 total_timesteps=4000000 checkpoint_behavior_class=flat checkpoint_count=62 checkpoint_first_return=-25.888891 checkpoint_peak_return=-25.888891 checkpoint_peak_update=19.000000 checkpoint_final_return=-25.888891 checkpoint_delta_first_to_final=0.000000 checkpoint_delta_peak_to_final=0.000000
+condition=anchor_fragile_full_probe__base__t4m__a0p00__c0p58 phase=baseline_4m family=base metric_horizon=long4m alpha=0.000000 c_upd=0.580000 total_timesteps=4000000 checkpoint_behavior_class=flat checkpoint_count=62 checkpoint_first_return=-25.888891 checkpoint_peak_return=-25.888891 checkpoint_peak_update=19.000000 checkpoint_final_return=-25.888891 checkpoint_delta_first_to_final=0.000000 checkpoint_delta_peak_to_final=0.000000
+condition=anchor_edge_full_probe__base__t4m__a0p10__c1p00 phase=baseline_4m family=base metric_horizon=long4m alpha=0.100000 c_upd=1.000000 total_timesteps=4000000 checkpoint_behavior_class=net_improvement checkpoint_count=62 checkpoint_first_return=-25.888891 checkpoint_peak_return=-23.753435 checkpoint_peak_update=939.000000 checkpoint_final_return=-23.877546 checkpoint_delta_first_to_final=2.011345 checkpoint_delta_peak_to_final=-0.124111
+condition=anchor_enabled_full_probe__base__t4m__a1p00__c0p90 phase=baseline_4m family=base metric_horizon=long4m alpha=1.000000 c_upd=0.900000 total_timesteps=4000000 checkpoint_behavior_class=improve_then_decline checkpoint_count=62 checkpoint_first_return=-24.315569 checkpoint_peak_return=-22.562399 checkpoint_peak_update=419.000000 checkpoint_final_return=-26.871277 checkpoint_delta_first_to_final=-2.555708 checkpoint_delta_peak_to_final=-4.308878
+
+Outputs
+- phase_provenance.json
+- phase_manifest.csv
+- phase_endpoint_summary_all_conditions.csv
+- phase_endpoint_summary_by_condition.csv
+- authoritative_comparison.csv
+- checkpoint_behavior_by_condition.csv
+- PHASE_REPORT.txt
+- cross_condition_plots/*.png
+- conditions/<condition>/condition_provenance.json
+- conditions/<condition>/seed_XX/trace_per_update.csv
+- conditions/<condition>/seed_XX/eval_summary.json
+- conditions/<condition>/seed_XX/seed_metadata.json
+- conditions/<condition>/seed_endpoint_summary.csv
+- conditions/<condition>/trace_per_seed_long.csv
+- conditions/<condition>/trace_aggregate.csv
+- conditions/<condition>/plots/*.png
